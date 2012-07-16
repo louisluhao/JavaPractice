@@ -5,3 +5,6 @@ watch this:
 http://java.dzone.com/news/how-fix-memory-leaks-java
 http://vimeo.com/21356498
 http://kohlerm.blogspot.com/2008/05/analyzing-memory-consumption-of-eclipse.html
+
+books:
+Java Performance
