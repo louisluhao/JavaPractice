@@ -12,16 +12,21 @@ public class ListPanel extends JPanel {
 	
 	JLabel jlabel = new JLabel();
 	JList jlist = new JList();
+	DefaultListModel model = new DefaultListModel();
 	
 	public ListPanel(String label){
 		this.setLayout(new BorderLayout());
 		jlabel.setText(label);
 		this.add(jlabel,BorderLayout.NORTH);
 		this.add(jlist,BorderLayout.CENTER);
+		
+		jlist.setModel(model);
 	}
 	
 	public void setList(List<String> lists){
-		DefaultListModel model = new DefaultListModel();
-		
+		model.clear();
+		for(String string : lists){
+			model.addElement(string);
+		}
 	}
 }
