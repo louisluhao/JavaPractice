@@ -8,13 +8,14 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 
-public class ListPanel extends JPanel {
+class ListPanel extends JPanel {
 	
 	JLabel jlabel = new JLabel();
 	JList jlist = new JList();
 	DefaultListModel model = new DefaultListModel();
 	
 	public ListPanel(String label){
+		
 		this.setLayout(new BorderLayout());
 		jlabel.setText(label);
 		this.add(jlabel,BorderLayout.NORTH);

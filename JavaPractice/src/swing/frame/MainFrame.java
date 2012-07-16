@@ -1,7 +1,9 @@
 package swing.frame;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.LayoutManager;
+import java.util.List;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -23,7 +25,26 @@ public class MainFrame extends JFrame {
 		panel.add(centerPanel,BorderLayout.CENTER);
 		
 		this.setSize(1000,600);
-		this.setVisible(true);
+	}
+	
+	public void setPositiveSeedList(List<String> list){
+		this.centerPanel.pSeedListPanel.setList(list);
+	}
+	
+	public void setNegaiveSeedList(List<String> list){
+		this.centerPanel.nSeedListPanel.setList(list);
+	}
+	
+	public void setTopRankSeedList(List<String> list){
+		this.centerPanel.topRankListPanel.setList(list);
+	}
+	
+	public void setPrecision(String precision){
+		this.centerPanel.precisionField.setText(precision);
+	}
+	
+	public void setIter(String iter){
+		centerPanel.setIter(iter);
 	}
 	
 	public static void main(String[] args) {
