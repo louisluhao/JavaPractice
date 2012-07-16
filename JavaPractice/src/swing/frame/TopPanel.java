@@ -29,7 +29,7 @@ class TopPanel extends JPanel {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("bom!");
+				SeedInputFrame seedInputFrame = new SeedInputFrame(Integer.valueOf(textField.getText()));
 			}
 		});
 	}

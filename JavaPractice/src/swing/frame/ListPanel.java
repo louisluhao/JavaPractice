@@ -7,6 +7,7 @@ import javax.swing.DefaultListModel;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
+import javax.swing.ListSelectionModel;
 
 class ListPanel extends JPanel {
 	
@@ -22,6 +23,7 @@ class ListPanel extends JPanel {
 		this.add(jlist,BorderLayout.CENTER);
 		
 		jlist.setModel(model);
+		jlist.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
 	}
 	
 	public void setList(List<String> lists){
