@@ -14,6 +14,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import swing.model.Main;
+
 public class MidIterPopupFrame extends JFrame {
 	
 	JFrame mySelf;
@@ -78,6 +80,7 @@ public class MidIterPopupFrame extends JFrame {
 					System.out.println(test);
 				}
 				
+				Main.iterBegin();
 				
 				WindowEvent wev = new WindowEvent(mySelf, WindowEvent.WINDOW_CLOSING);
 				Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(wev);

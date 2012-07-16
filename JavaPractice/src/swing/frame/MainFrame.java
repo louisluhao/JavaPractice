@@ -47,7 +47,7 @@ public class MainFrame extends JFrame {
 		centerPanel.setIter(iter);
 	}
 	
-	public static void main(String[] args) {
-		MainFrame mainFrame = new MainFrame();
-	}
+//	public static void main(String[] args) {
+//		MainFrame mainFrame = new MainFrame();
+//	}
 }
